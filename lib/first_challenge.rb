@@ -15,7 +15,13 @@ def first_challenge
 
   #your code here
 
-
+  contacts.each do |name, stuffs|
+    stuffs.each do |stuffName, stuffVal|
+      if stuffName == :favorite_icecream_flavors
+        stuffVal.delete("strawberry")
+      end
+    end
+  end
   #remember to return your newly altered contacts hash!
   contacts
 end
