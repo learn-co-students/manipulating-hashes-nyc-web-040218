@@ -1,4 +1,5 @@
 def second_challenge
+only_groceries = []
   groceries = {
    dairy: ["milk", "yogurt", "cheese"],
    vegetable: ["carrots", "broccoli", "cucumbers"],
@@ -6,8 +7,7 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
-
-  
+only_groceries << groceries.values
+only_groceries.flatten
 
 end
